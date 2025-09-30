@@ -1,0 +1,73 @@
+# {{ site_title }} - 第 {{ year }} 年第 {{ week }} 周周报
+生成时间：{{ generated_at }}  
+数据时间窗口：{{ window_start }} ~ {{ window_end }}
+
+---
+## 要闻速览
+
+### 国内
+{% if news_cn %}
+{% for it in news_cn %}
+- {{ it.line }}
+{% endfor %}
+{% else %}
+> （本周暂无国内要闻）
+{% endif %}
+
+### 海外
+{% if news_overseas %}
+{% for it in news_overseas %}
+- {{ it.line }}
+{% endfor %}
+{% else %}
+> （本周暂无海外要闻）
+{% endif %}
+
+---
+
+### 产品 / 市场数据
+{% if market and market|length > 0 -%}
+{% for i in market -%}
+- {{ i.line }}
+{% endfor -%}
+{%- else -%}
+- （本期暂无）
+{%- endif %}
+
+---
+
+### 产品分析
+
+#### 移动端 / 未知
+{% if product_mobile and product_mobile|length > 0 -%}
+{%- for it in product_mobile %}
+{%- if it.game_type %}
+- <span style="color:#f59e0b;font-weight:700">[{{ it.game_type }}]</span> {{ it.line }}
+{%- else %}
+- {{ it.line }}
+{%- endif %}
+{%- endfor %}
+{%- else %}
+（本周暂无移动端/未知产品分析）
+{%- endif %}
+
+#### PC / 主机
+{% if product_pc_console and product_pc_console|length > 0 -%}
+{%- for it in product_pc_console %}
+- {{ it.line }}
+{%- endfor %}
+{%- else %}
+（本周暂无 PC/主机产品分析）
+{%- endif %}
+
+---
+
+## 方法论学习
+{% if method %}
+{% for it in method %}
+- {{ it.line }}
+{% endfor %}
+{% else %}
+> （本周暂无方法论学习）
+{% endif %}
+

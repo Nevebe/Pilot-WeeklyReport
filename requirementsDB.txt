@@ -1,0 +1,10 @@
+
+feedparser
+Jinja2
+PyYAML
+python-dateutil
+python-dotenv
+requests
+openai
+jieba
+duckdb
