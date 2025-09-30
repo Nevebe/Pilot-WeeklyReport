@@ -1,0 +1,342 @@
+weights:
+  MP_WXS_3864828339:
+    weight: 1.8
+    official: true
+    expertise:
+    - 要闻速览
+  MP_WXS_3209762660:
+    weight: 1.4
+    official: true
+    expertise:
+    - 要闻速览
+    - 产品分析
+  MP_WXS_3930387284:
+    weight: 1.3
+    official: true
+    expertise:
+    - 产品分析
+  MP_WXS_2395315541:
+    weight: 1.1
+    official: true
+    expertise:
+    - 要闻速览
+  MP_WXS_3874541048:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3075486737:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3903270666:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3268783404:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3925294881:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3911698754:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3512627903:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3541060043:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3016734881:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3964682632:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3863548828:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3549976465:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3869541722:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3862838969:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3083148204:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3075206960:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3920725124:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3558858917:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3923669793:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3891701297:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3228903535:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_3873336379:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  MP_WXS_2399768513:
+    weight: 1.1
+    official: true
+    expertise:
+    - nan
+  nan:
+    weight: 0.5
+    official: false
+    expertise:
+    - nan
+defaults:
+  weight: 1.0
+  official: false
+meta:
+  MP_WXS_3864828339:
+    rank: 3
+    isofficial: true
+    weight_raw: '1.8'
+    des: Enjoy出海开发者服务平台
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3209762660:
+    rank: 1
+    isofficial: true
+    weight_raw: '1.4'
+    des: 罗斯基
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3930387284:
+    rank: 2
+    isofficial: true
+    weight_raw: '1.3'
+    des: 小U盘游戏
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_2395315541:
+    rank: 4
+    isofficial: true
+    weight_raw: '1.1'
+    des: GameRes游资网
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3874541048:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3075486737:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3903270666:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3268783404:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3925294881:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3911698754:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3512627903:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3541060043:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3016734881:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3964682632:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3863548828:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3549976465:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3869541722:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3862838969:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3083148204:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3075206960:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3920725124:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3558858917:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3923669793:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3891701297:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3228903535:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_3873336379:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  MP_WXS_2399768513:
+    rank: null
+    isofficial: true
+    weight_raw: '1.1'
+    des: nan
+    isIndie: false
+    __sheet__: Sheet1
+  nan:
+    rank: null
+    isofficial: false
+    weight_raw: nan
+    des: nan
+    isIndie: false
+    __sheet__: 说明

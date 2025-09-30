@@ -1,0 +1,630 @@
+defaults:
+  weight: 1.0
+  scope: both
+  decay_days: 14
+categories:
+  行业的重要变化:
+  - keyword: 政策
+    weight: 1.3
+    regex: false
+    synonyms:
+    - 法规
+    - 新规
+    negatives: &id001 []
+    sources: &id002 []
+    scope: both
+    decay_days: 30
+    note: 政策相关
+    desc: 行业政策动态
+  - weight: 1.3
+    regex: false
+    negatives: *id001
+    sources: *id002
+    scope: both
+    decay_days: 30
+    note: 政策相关
+    desc: 行业政策动态
+    keyword: 法规
+  - weight: 1.3
+    regex: false
+    negatives: *id001
+    sources: *id002
+    scope: both
+    decay_days: 30
+    note: 政策相关
+    desc: 行业政策动态
+    keyword: 新规
+  - keyword: 合规
+    weight: 1.3
+    regex: false
+    synonyms:
+    - 审批
+    - 监管
+    negatives: &id003 []
+    sources: &id004 []
+    scope: both
+    decay_days: 30
+    note: 合规与审批
+    desc: 合规风险
+  - weight: 1.3
+    regex: false
+    negatives: *id003
+    sources: *id004
+    scope: both
+    decay_days: 30
+    note: 合规与审批
+    desc: 合规风险
+    keyword: 审批
+  - weight: 1.3
+    regex: false
+    negatives: *id003
+    sources: *id004
+    scope: both
+    decay_days: 30
+    note: 合规与审批
+    desc: 合规风险
+    keyword: 监管
+  - keyword: 法规
+    weight: 1.3
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 30
+    note: 法规条款
+    desc: 法律法规
+  - keyword: 新规
+    weight: 1.3
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 30
+    note: 新规信息
+    desc: 新政策规则
+  - keyword: 税收
+    weight: 1.3
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 30
+    note: 税收政策
+    desc: 税收政策
+  - keyword: 隐私
+    weight: 1.3
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 30
+    note: 隐私保护
+    desc: 数据与隐私相关
+  - keyword: 审批
+    weight: 1.3
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 30
+    note: 审批相关
+    desc: 审批流程与规定
+  - keyword: 出口管制
+    weight: 1.3
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 30
+    note: 出口限制
+    desc: 出口与贸易限制
+  产品的重要分析:
+  - keyword: 新作
+    weight: 1.2
+    regex: false
+    synonyms:
+    - 新品
+    - 新游戏
+    negatives: &id005 []
+    sources: &id006 []
+    scope: both
+    decay_days: 20
+    note: 新产品发布
+    desc: 新游戏/产品动向
+  - weight: 1.2
+    regex: false
+    negatives: *id005
+    sources: *id006
+    scope: both
+    decay_days: 20
+    note: 新产品发布
+    desc: 新游戏/产品动向
+    keyword: 新品
+  - weight: 1.2
+    regex: false
+    negatives: *id005
+    sources: *id006
+    scope: both
+    decay_days: 20
+    note: 新产品发布
+    desc: 新游戏/产品动向
+    keyword: 新游戏
+  - keyword: 上线
+    weight: 1.2
+    regex: false
+    synonyms:
+    - 上架
+    - 发布
+    negatives: &id007 []
+    sources: &id008 []
+    scope: both
+    decay_days: 20
+    note: 上线事件
+    desc: 产品正式进入市场
+  - weight: 1.2
+    regex: false
+    negatives: *id007
+    sources: *id008
+    scope: both
+    decay_days: 20
+    note: 上线事件
+    desc: 产品正式进入市场
+    keyword: 上架
+  - weight: 1.2
+    regex: false
+    negatives: *id007
+    sources: *id008
+    scope: both
+    decay_days: 20
+    note: 上线事件
+    desc: 产品正式进入市场
+    keyword: 发布
+  - keyword: 测试
+    weight: 1.2
+    regex: false
+    synonyms:
+    - 内测
+    - 公测
+    negatives: &id009 []
+    sources: &id010 []
+    scope: both
+    decay_days: 20
+    note: 产品测试
+    desc: 产品测试与验证
+  - weight: 1.2
+    regex: false
+    negatives: *id009
+    sources: *id010
+    scope: both
+    decay_days: 20
+    note: 产品测试
+    desc: 产品测试与验证
+    keyword: 内测
+  - weight: 1.2
+    regex: false
+    negatives: *id009
+    sources: *id010
+    scope: both
+    decay_days: 20
+    note: 产品测试
+    desc: 产品测试与验证
+    keyword: 公测
+  - keyword: 首曝
+    weight: 1.2
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 20
+    note: 首曝信息
+    desc: 产品首次曝光
+  - keyword: 产品迭代
+    weight: 1.2
+    regex: false
+    synonyms:
+    - 功能更新
+    negatives: &id011 []
+    sources: &id012 []
+    scope: both
+    decay_days: 20
+    note: 产品迭代
+    desc: 产品迭代与优化
+  - weight: 1.2
+    regex: false
+    negatives: *id011
+    sources: *id012
+    scope: both
+    decay_days: 20
+    note: 产品迭代
+    desc: 产品迭代与优化
+    keyword: 功能更新
+  - keyword: 功能更新
+    weight: 1.2
+    regex: false
+    synonyms:
+    - UI/UX
+    negatives: &id013 []
+    sources: &id014 []
+    scope: both
+    decay_days: 20
+    note: 功能更新
+    desc: 产品更新与改进
+  - weight: 1.2
+    regex: false
+    negatives: *id013
+    sources: *id014
+    scope: both
+    decay_days: 20
+    note: 功能更新
+    desc: 产品更新与改进
+    keyword: UI/UX
+  - keyword: UI/UX
+    weight: 1.2
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 20
+    note: 设计体验
+    desc: 界面和交互设计
+  - keyword: 核心玩法
+    weight: 1.2
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 20
+    note: 玩法机制
+    desc: 游戏或产品核心机制
+  运营研发投放方法论:
+  - keyword: 买量
+    weight: 1.1
+    regex: false
+    synonyms:
+    - 投放
+    - 采买
+    negatives: &id015 []
+    sources: &id016 []
+    scope: both
+    decay_days: 15
+    note: 买量策略
+    desc: 获客与广告投放
+  - weight: 1.1
+    regex: false
+    negatives: *id015
+    sources: *id016
+    scope: both
+    decay_days: 15
+    note: 买量策略
+    desc: 获客与广告投放
+    keyword: 投放
+  - weight: 1.1
+    regex: false
+    negatives: *id015
+    sources: *id016
+    scope: both
+    decay_days: 15
+    note: 买量策略
+    desc: 获客与广告投放
+    keyword: 采买
+  - keyword: 投放
+    weight: 1.1
+    regex: false
+    synonyms:
+    - 广告优化
+    negatives: &id017 []
+    sources: &id018 []
+    scope: both
+    decay_days: 15
+    note: 广告投放
+    desc: 广告投放与优化
+  - weight: 1.1
+    regex: false
+    negatives: *id017
+    sources: *id018
+    scope: both
+    decay_days: 15
+    note: 广告投放
+    desc: 广告投放与优化
+    keyword: 广告优化
+  - keyword: 广告优化
+    weight: 1.1
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 15
+    note: 广告优化
+    desc: 提升投放效率
+  - keyword: 变现
+    weight: 1.1
+    regex: false
+    synonyms:
+    - ARPU
+    - LTV
+    negatives: &id019 []
+    sources: &id020 []
+    scope: both
+    decay_days: 15
+    note: 商业化
+    desc: 收益与变现
+  - weight: 1.1
+    regex: false
+    negatives: *id019
+    sources: *id020
+    scope: both
+    decay_days: 15
+    note: 商业化
+    desc: 收益与变现
+    keyword: ARPU
+  - weight: 1.1
+    regex: false
+    negatives: *id019
+    sources: *id020
+    scope: both
+    decay_days: 15
+    note: 商业化
+    desc: 收益与变现
+    keyword: LTV
+  - keyword: ARPU
+    weight: 1.1
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 15
+    note: 每用户收入
+    desc: 用户价值指标
+  - keyword: LTV
+    weight: 1.1
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 15
+    note: 生命周期价值
+    desc: 用户生命周期价值
+  - keyword: SDK
+    weight: 1.1
+    regex: false
+    synonyms:
+    - 工具链
+    negatives: &id021 []
+    sources: &id022 []
+    scope: both
+    decay_days: 20
+    note: 工具与集成
+    desc: 开发与集成工具
+  - weight: 1.1
+    regex: false
+    negatives: *id021
+    sources: *id022
+    scope: both
+    decay_days: 20
+    note: 工具与集成
+    desc: 开发与集成工具
+    keyword: 工具链
+  - keyword: 研发效率
+    weight: 1.1
+    regex: false
+    synonyms:
+    - 工具链
+    negatives: &id023 []
+    sources: &id024 []
+    scope: both
+    decay_days: 25
+    note: 研发效率
+    desc: 提升研发效能
+  - weight: 1.1
+    regex: false
+    negatives: *id023
+    sources: *id024
+    scope: both
+    decay_days: 25
+    note: 研发效率
+    desc: 提升研发效能
+    keyword: 工具链
+  - keyword: 工具链
+    weight: 1.1
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 25
+    note: 工具链相关
+    desc: 研发工具与流程
+  市场综合分析:
+  - keyword: 报告
+    weight: 1.0
+    regex: false
+    synonyms:
+    - 榜单
+    - 数据
+    - 趋势
+    negatives: &id025 []
+    sources: &id026 []
+    scope: both
+    decay_days: 30
+    note: 行业报告
+    desc: 数据与研究报告
+  - weight: 1.0
+    regex: false
+    negatives: *id025
+    sources: *id026
+    scope: both
+    decay_days: 30
+    note: 行业报告
+    desc: 数据与研究报告
+    keyword: 榜单
+  - weight: 1.0
+    regex: false
+    negatives: *id025
+    sources: *id026
+    scope: both
+    decay_days: 30
+    note: 行业报告
+    desc: 数据与研究报告
+    keyword: 数据
+  - weight: 1.0
+    regex: false
+    negatives: *id025
+    sources: *id026
+    scope: both
+    decay_days: 30
+    note: 行业报告
+    desc: 数据与研究报告
+    keyword: 趋势
+  - keyword: 榜单
+    weight: 1.0
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 30
+    note: 榜单信息
+    desc: 排行榜相关
+  - keyword: 数据
+    weight: 1.0
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 30
+    note: 数据指标
+    desc: 数据分析
+  - keyword: 趋势
+    weight: 1.0
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 30
+    note: 行业趋势
+    desc: 市场趋势
+  - keyword: 收入
+    weight: 1.0
+    regex: false
+    synonyms:
+    - 增长
+    - ARPU
+    - LTV
+    negatives: &id027 []
+    sources: &id028 []
+    scope: both
+    decay_days: 30
+    note: 收入与财务
+    desc: 收入与变现相关
+  - weight: 1.0
+    regex: false
+    negatives: *id027
+    sources: *id028
+    scope: both
+    decay_days: 30
+    note: 收入与财务
+    desc: 收入与变现相关
+    keyword: 增长
+  - weight: 1.0
+    regex: false
+    negatives: *id027
+    sources: *id028
+    scope: both
+    decay_days: 30
+    note: 收入与财务
+    desc: 收入与变现相关
+    keyword: ARPU
+  - weight: 1.0
+    regex: false
+    negatives: *id027
+    sources: *id028
+    scope: both
+    decay_days: 30
+    note: 收入与财务
+    desc: 收入与变现相关
+    keyword: LTV
+  - keyword: 增长
+    weight: 1.0
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 30
+    note: 增长动态
+    desc: 市场增长
+  - keyword: 融资
+    weight: 1.0
+    regex: false
+    synonyms:
+    - 投资
+    - 并购
+    negatives: &id029 []
+    sources: &id030 []
+    scope: both
+    decay_days: 30
+    note: 融资事件
+    desc: 资本动态
+  - weight: 1.0
+    regex: false
+    negatives: *id029
+    sources: *id030
+    scope: both
+    decay_days: 30
+    note: 融资事件
+    desc: 资本动态
+    keyword: 投资
+  - weight: 1.0
+    regex: false
+    negatives: *id029
+    sources: *id030
+    scope: both
+    decay_days: 30
+    note: 融资事件
+    desc: 资本动态
+    keyword: 并购
+  - keyword: 并购
+    weight: 1.0
+    regex: false
+    synonyms:
+    - 投资
+    negatives: &id031 []
+    sources: &id032 []
+    scope: both
+    decay_days: 30
+    note: 并购事件
+    desc: 并购整合
+  - weight: 1.0
+    regex: false
+    negatives: *id031
+    sources: *id032
+    scope: both
+    decay_days: 30
+    note: 并购事件
+    desc: 并购整合
+    keyword: 投资
+  - keyword: 投资
+    weight: 1.0
+    regex: false
+    synonyms: []
+    negatives: []
+    sources: []
+    scope: both
+    decay_days: 30
+    note: 投资事件
+    desc: 投资活动
+global_negatives: []
